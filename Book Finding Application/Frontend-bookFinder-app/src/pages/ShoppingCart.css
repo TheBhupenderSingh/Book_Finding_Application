@@ -1,0 +1,117 @@
+.bookish {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 113px;
+  white-space: nowrap;
+}
+.bookish-wrapper,
+.frame-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 9px 0 0;
+}
+.frame-child {
+  width: 387px;
+  border: 0;
+  outline: 0;
+  background-color: #d9d9d9;
+  height: 41px;
+  padding: 3px 40px 17px;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  max-width: 100%;
+}
+.notifications {
+  position: relative;
+  line-height: 21px;
+  display: inline-block;
+  min-width: 97px;
+}
+.my-profile-notification {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.my-profile-notification-wrapper {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.frame-parent {
+  margin: 0;
+  width: 1272px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-darkolivegreen);
+  font-family: var(--font-newsreader);
+}
+.shopping-cart,
+.shopping-cart-inner {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.shopping-cart-inner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 44px;
+  max-width: 100%;
+}
+.shopping-cart {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) 0 184px;
+  gap: 39.5px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .shopping-cart-inner {
+    padding-left: 22px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .my-profile-notification {
+    display: none;
+  }
+  .my-profile-notification-wrapper {
+    width: 0;
+  }
+  .shopping-cart {
+    gap: var(--gap-xl);
+  }
+}

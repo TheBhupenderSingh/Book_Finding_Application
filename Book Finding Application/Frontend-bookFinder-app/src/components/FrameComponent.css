@@ -1,0 +1,308 @@
+.ed-o-neil-avvdzlhdowa-unsplash-icon {
+  height: 160px;
+  width: 160px;
+  position: relative;
+  object-fit: cover;
+}
+.heirloom-tomato,
+.lb {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+}
+.lb {
+  color: var(--color-darkolivegreen);
+  display: inline-block;
+  min-width: 92px;
+}
+.input-field-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.lb1 {
+  position: relative;
+  line-height: 21px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 26px;
+}
+.lb-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) 0 0;
+}
+.icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  object-fit: contain;
+}
+.input-field,
+.input-field-label-parent,
+.tomato,
+.tomato-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-field {
+  width: 128px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-12xs) var(--padding-7xs) var(--padding-12xs)
+    var(--padding-sm);
+  gap: var(--gap-27xl);
+  font-size: var(--font-size-base);
+}
+.input-field-label-parent,
+.tomato,
+.tomato-inner {
+  flex-direction: column;
+}
+.input-field-label-parent {
+  gap: var(--gap-mini);
+}
+.tomato,
+.tomato-inner {
+  padding: var(--padding-5xl) 0 0;
+}
+.tomato {
+  align-self: stretch;
+  height: 159px;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-whitesmoke);
+  border: 2px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xl);
+  gap: var(--gap-5xl);
+}
+.noonbrew-zicb4-ekmak-unsplash-icon {
+  height: 160px;
+  width: 160px;
+  position: relative;
+  object-fit: cover;
+}
+.lb2,
+.organic-ginger {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+}
+.lb2 {
+  color: var(--color-darkolivegreen);
+  display: inline-block;
+  min-width: 102px;
+}
+.organic-ginger-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.lb3 {
+  position: relative;
+  line-height: 21px;
+  display: inline-block;
+  min-width: 44px;
+}
+.lb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) 0 0;
+}
+.icon1 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  object-fit: contain;
+}
+.frame-group,
+.ginger,
+.ginger-inner,
+.input-field1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-field1 {
+  width: 128px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-12xs) var(--padding-7xs) var(--padding-12xs)
+    var(--padding-sm);
+  gap: var(--gap-9xl);
+  font-size: var(--font-size-base);
+}
+.frame-group,
+.ginger,
+.ginger-inner {
+  flex-direction: column;
+}
+.frame-group {
+  gap: var(--gap-mini);
+}
+.ginger,
+.ginger-inner {
+  padding: var(--padding-5xl) 0 0;
+}
+.ginger {
+  align-self: stretch;
+  height: 159px;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-whitesmoke);
+  border: 2px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xl);
+  gap: var(--gap-5xl);
+}
+.k8-0-fkphulv-m-unsplash-2-icon {
+  height: 160px;
+  width: 160px;
+  position: relative;
+  object-fit: cover;
+}
+.lb4,
+.sweet-onion {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
+}
+.lb4 {
+  color: var(--color-darkolivegreen);
+  min-width: 93px;
+}
+.sweet-onion-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.lb5 {
+  position: relative;
+  line-height: 21px;
+  display: inline-block;
+  min-width: 29px;
+}
+.lb-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) 0 0;
+}
+.icon2 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  object-fit: contain;
+}
+.input-field2 {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-12xs) var(--padding-3xs) var(--padding-12xs)
+    var(--padding-sm);
+  gap: var(--gap-xl);
+  font-size: var(--font-size-base);
+}
+.frame-container,
+.onion,
+.onion-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-container {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-mini);
+}
+.onion,
+.onion-inner {
+  box-sizing: border-box;
+}
+.onion-inner {
+  width: 128px;
+  flex-direction: column;
+  padding: var(--padding-5xl) 0 0;
+}
+.onion {
+  align-self: stretch;
+  height: 159px;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-whitesmoke);
+  border: 2px solid var(--color-gainsboro-100);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xl);
+  gap: var(--gap-5xl);
+}
+.shopping-cart-child,
+.tomato-parent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.tomato-parent {
+  width: 821px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-12xl);
+}
+.shopping-cart-child {
+  width: 1013px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .heirloom-tomato,
+  .lb,
+  .lb2,
+  .lb4,
+  .organic-ginger,
+  .sweet-onion {
+    font-size: var(--font-size-base);
+    line-height: 21px;
+  }
+  .tomato-parent {
+    gap: var(--gap-mini);
+  }
+}

@@ -1,0 +1,91 @@
+.available-stocks {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.items {
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 69px;
+}
+.items-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.available-stocks-parent {
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.divider,
+.page-heading {
+  align-self: stretch;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.divider {
+  height: 2px;
+  position: relative;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  border-top: 2px solid var(--color-gainsboro-100);
+}
+.page-heading {
+  height: 149px;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) var(--padding-75xl) var(--padding-14xl)
+    var(--padding-77xl);
+  gap: var(--gap-14xl);
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-indianred);
+  font-family: var(--font-newsreader);
+}
+@media screen and (max-width: 1050px) {
+  .available-stocks {
+    font-size: var(--font-size-10xl);
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .page-heading {
+    gap: var(--gap-base);
+    padding-left: var(--padding-29xl);
+    padding-right: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .available-stocks {
+    font-size: var(--font-size-3xl);
+    line-height: 26px;
+  }
+  .items {
+    font-size: var(--font-size-base);
+    line-height: 21px;
+  }
+  .page-heading {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
