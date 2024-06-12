@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 
 /*
+//if want to use the security config add dependency for @Annote it properly and then use this class.
 @Configuration
 
 public class SecurityConfig {
