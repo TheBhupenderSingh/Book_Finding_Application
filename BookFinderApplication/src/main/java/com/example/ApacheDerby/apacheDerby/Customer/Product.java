@@ -1,6 +1,8 @@
 package com.example.ApacheDerby.apacheDerby.Customer;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,20 +14,22 @@ import lombok.Data;
 public class Product {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id ;
 	private String bookName ;
 	private String auther ;
 	
 	public Product() {}
 
-	public Product(Integer id, String bookName, String auther) {
+	public Product( String bookName, String auther) {
 		super();
-		this.id = id;
+		
 		this.bookName = bookName;
 		this.auther = auther;
 		
 		
 	}
+	
 
 	public Integer getId() {
 		return id;

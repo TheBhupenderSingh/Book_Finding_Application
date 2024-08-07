@@ -21,8 +21,7 @@ public class ApacheDerbyApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ApacheDerbyApplication.class, args);
-	
-		
+			
 	}
 	
 	@Bean
@@ -31,17 +30,19 @@ public class ApacheDerbyApplication {
             // Add data to the repository
         	Customer a  = new Customer();
         	List<Product> aA = new ArrayList<>();
-        	Product aOne = new Product(1,"Dune","Frank Herbert");
-        	Product aTwo = new Product(2,"Jaws","Peter Benchley");
-        	Product aThree = new Product(3,"Possession","A.S. Byatt");
-        	Product aFour = new Product(4,"Misery" ,"Stephen King");
+        	Product aOne = new Product("Dune","Frank Herbert");
+        	Product aTwo = new Product("Jaws","Peter Benchley");
+        	Product aThree = new Product("Possession","A.S. Byatt");
+        	Product aFour = new Product("Misery" ,"Stephen King");
         	a.setAddress("Punjab");
         	a.setId(1);
         	a.setName("Ranveer");
-        	a.setNumber(789566744);
+        	a.setNumber(789567878);
         	aA.add(aThree);
         	aA.add(aFour);
         	a.setProduct(aA);
+        	a.setEmail("ranveer@gmail.com");
+        	a.setPassword("Ran");
         	repository.save(a);
         	
         	Customer b  = new Customer();
@@ -53,11 +54,15 @@ public class ApacheDerbyApplication {
         	bB.add(aOne);
         	bB.add(aTwo);
         	b.setProduct(bB);
+        	b.setEmail("rajveer@gmail.com");
+        	b.setPassword("Raj");
         	repository.save(b);
         	
 
           
         };
+        
     }
-
+	
 }
+

@@ -23,7 +23,7 @@ public class Customer {
 	private Integer id ;
 	private String name;
 	private String address;
-	private int number;
+	private float number;
 	@ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
         name = "customer_product",
@@ -31,12 +31,12 @@ public class Customer {
         inverseJoinColumns = @JoinColumn(name = "product_id")
     )
 	private List<Product> products;
-	
-	
+	private String email ;
+	private String password  ;
+
 	public Customer() {}
 	
-	
-	public Customer(Integer id, String name, String address, int number , List<Product> products) {
+	public Customer(Integer id, String name, String address, float number , List<Product> products) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -44,6 +44,8 @@ public class Customer {
 		this.number = number;
 		this.products = products ;
 	}
+	
+	
 
 	public List<Product> getProducts() {
 		return products;
@@ -79,12 +81,31 @@ public class Customer {
 		this.address = address;
 	}
 
-	public int getNumber() {
+	public float getNumber() {
 		return number;
 	}
 
-	public void setNumber(int number) {
-		this.number = number;
+	public void setNumber(float i) {
+		this.number = i;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	

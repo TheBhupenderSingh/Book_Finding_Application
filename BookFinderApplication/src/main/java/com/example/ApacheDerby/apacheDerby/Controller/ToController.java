@@ -3,6 +3,7 @@ package com.example.ApacheDerby.apacheDerby.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,10 +53,20 @@ public class ToController {
 	public void deleteTo(@PathVariable Integer id ) {
 		toservice.deleteTo(id);
 	}
+	
 /*6 Creating Product inside the customer*/
 	@RequestMapping(method=RequestMethod.POST , value="/customer/{id}/product" )
-	public void createProduct(@RequestBody Product p , @PathVariable Integer id) {
-		toservice.createProduct(id, p);
+	public ResponseEntity<String> createProduct(@RequestBody Product p , @PathVariable Integer id) {
+		
+		
+		if(toservice.createProduct(id, p).equalsIgnoreCase("Sucessfull")){
+			return ResponseEntity.ok("Done");
+		}
+		else {
+			return ResponseEntity.ok("Already Have");
+		}
+		
+		
 	}
 /*7 Getting All the Products irrespective of Customer*/
 	@RequestMapping(method=RequestMethod.GET ,value="/product")
@@ -76,7 +87,31 @@ public class ToController {
     public List<Customer> findCustOfSameAddSameBook(@PathVariable("address") String address ,@PathVariable("bookName") String bookName){
 		return toservice.findCustOfSameAddSameBook(address, bookName);
     }
-    	
+/*10 Authenticators using Email id and Password*/
+	@RequestMapping(method=RequestMethod.POST ,value="/login")
+	public ResponseEntity<Integer> verify (@RequestBody Customer customer) {
+		return ResponseEntity.ok(toservice.verify(customer)) ;
+	}
+	
+	
+/*11 Register New User*/ 	
+	@RequestMapping(method=RequestMethod.POST , value="/SignUp" )
+	public ResponseEntity<String> registerUser(@RequestBody Customer customer) {
+		if(toservice.registerUser(customer).equalsIgnoreCase("Done")){
+			return ResponseEntity.ok("Success");	
+		}
+		else {
+			return ResponseEntity.ok("Already have an account");
+		}
+	}
+	
+//Deleting Books for user
+	@RequestMapping(method=RequestMethod.DELETE ,value="/customer/{id}/product/{name}")
+	public String deleteTo(@PathVariable Integer id ,@PathVariable String name  ) {
+		return toservice.deleteBooks(id, name);
+	}
+	
+	
     
 }
    
